@@ -9,4 +9,4 @@ RUN apt-get update &&\
     tar -zxf helm-v3.2.0-linux-amd64.tar.gz &&\
     mv linux-amd64/helm /usr/local/bin/ &&\
     rm -rf linux-amd64 helm-v3.2.0-linux-amd64.tar.gz &&\
-    apt clean 
+    apt-get clean && apt-get autoclean 
