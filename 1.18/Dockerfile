@@ -1,7 +1,7 @@
 FROM debian:buster
 
 RUN apt-get update &&\
-    apt-get install -y curl &&\
+    apt-get install -y curl gettext-base &&\
     curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl &&\
     chmod +x ./kubectl &&\
     mv ./kubectl /usr/local/bin/ &&\
